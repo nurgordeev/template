@@ -1,37 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="index.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+		rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#000000" />
+	<meta name="description" content="Web site created using create-react-app" />
+	<!--
+			Notice the use of %PUBLIC_URL% in the tags above.
+			It will be replaced with the URL of the `public` folder during the build.
+			Only files inside the `public` folder can be referenced from the HTML.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+			Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+			work correctly both with client-side routing and a non-root public URL.
+			Learn how to configure a non-root public URL by running `npm run build`.
+		-->
+	<title>Spotify</title>
+</head>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<body>
+	<div class="main">
+		<div class="main__leftside">
+			<div class="main__logo">
+				<img class="logo" src="/public/img/spotify-logo.png" alt=" ">
+			</div>
+			<div class="main__navi">
+				<ul>
+					<li class="list"><a href="#" class="list-group-item"><i class="fa fa-home fa-2x"></i>Главная</a></li>
+					<li class="list"><a href="#" class="list-group-item"><i class="fa fa-search fa-2x"></i>Поиск</a></li>
+					<li class="list"><a href="#" class="list-group-item"><i class="fa fa-book fa-2x"></i>Моя медиатека</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main__center">
+			<div class="main__top">
+				<div class="main__top-buttons">
+					<div class="main__angle">
+						<div class="main__left-button">
+							<a href="#" class="button-group-item"><i class="fa fa-angle-left fa-3x"></i></a>
+						</div>
+						<div class="main__right-button">
+							<a href="#" class="button-group-item"><i class="fa fa-angle-right fa-3x"></i></a>
+						</div>
+					</div>
+					<div class="main__user-profile">
+						<a href="#">Username</a>
+					</div>
+				</div>
+			</div>
+			<div class="main__content">
+				<h3 class="main__title">Настроение</h3>
+				<p class="main__subtitle">Здесь найдется музыка для любого настроения</p>
+				<div class="main__albums-container">
+					<div class="main__albums-item">
+						<img class="cover" src="/public/img/alb_1.jpg" alt="">
+						<h3 class="main__albums-item-title">Жизнь прекрасна</h3>
+						<p class="main__albums-item-subtitle">Позитивные песни для отличного настроения.</p>
+					</div>
+					<div class="main__albums-item">
+						<img class="cover" src="/public/img/alb_2.jpg" alt="">
+						<h3 class="main__albums-item-title">Всё сложно</h3>
+						<p class="main__albums-item-subtitle">Для тех моментов, когда нет уверенности ни в чем.</p>
+					</div>
+					<div class="main__albums-item">
+						<img class="cover" src="/public/img/alb_3.jpg" alt="">
+						<h3 class="main__albums-item-title">Хюгге</h3>
+						<p class="main__albums-item-subtitle">Уютные треки, чтобы добавить тепла в домашний вечер.</p>
+					</div>
+					<div class="main__albums-item">
+						<img class="cover" src="/public/img/alb_4.jpg" alt="">
+						<h3 class="main__albums-item-title">Feelin' Myself</h3>
+						<p class="main__albums-item-subtitle">The hip-hop playlist that's a whole mood.</p>
+					</div>
+					<div class="main__albums-item">
+						<img class="cover" src="/public/img/alb_5.jpg" alt="">
+						<h3 class="main__albums-item-title">плёнка</h3>
+						<p class="main__albums-item-subtitle">саундтрек твоих лучших снимков.</p>
+					</div>
+				</div>
+				<div class="main__albums-container">
+					<div class="main__albums-item">
+						<img class="cover" src="/public/img/alb_1.jpg" alt="">
+						<h3 class="main__albums-item-title">Жизнь прекрасна</h3>
+						<p class="main__albums-item-subtitle">Позитивные песни для отличного настроения.</p>
+					</div>
+					<div class="main__albums-item">
+						<img class="cover" src="/public/img/alb_2.jpg" alt="">
+						<h3 class="main__albums-item-title">Всё сложно</h3>
+						<p class="main__albums-item-subtitle">Для тех моментов, когда нет уверенности ни в чем.</p>
+					</div>
+					<div class="main__albums-item">
+						<img class="cover" src="/public/img/alb_3.jpg" alt="">
+						<h3 class="main__albums-item-title">Хюгге</h3>
+						<p class="main__albums-item-subtitle">Уютные треки, чтобы добавить тепла в домашний вечер.</p>
+					</div>
+					<div class="main__albums-item">
+						<img class="cover" src="/public/img/alb_4.jpg" alt="">
+						<h3 class="main__albums-item-title">Feelin' Myself</h3>
+						<p class="main__albums-item-subtitle">The hip-hop playlist that's a whole mood.</p>
+					</div>
+					<div class="main__albums-item">
+						<img class="cover" src="/public/img/alb_5.jpg" alt="">
+						<h3 class="main__albums-item-title">плёнка</h3>
+						<p class="main__albums-item-subtitle">саундтрек твоих лучших снимков.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main__footer">
+		<div class="main__player">
+			<div class="main__content-info">
+				<img class="mini-cover" src="/public/img/alb_5.jpg" alt="">
+				<div class="main__player-nametrack">
+					<h3 class="main__player-title"> name</h3>
+					<p class="main__player-subtitle">track</p>
+				</div>
+				<a href="#" class="button-group-item"><i class="fa fa-heart fa-2xl"></i></a>
+			</div>
+			<div class="main__player-controls">
+				<div class="main__player-controls-upper">
+					<a href="#" class="button-group-item"><i class="fa fa-random fa-2x"></i></a>
+					<a href="#" class="button-group-item"><i class="fa fa-step-backward fa-2x"></i></a>
+					<a href="#" class="button-group-item"><i class="fa fa-play fa-2x"></i></a>
+					<a href="#" class="button-group-item"><i class="fa fa-step-forward fa-2x"></i></a>
+					<a href="#" class="button-group-item"><i class="fa fa-repeat fa-2x"></i></a>
+				</div>
+				<div class="main__player-bar">
+					<span id="current-time" class="time">0:00</span>
+					<input type="range" id="seek-slider" max="100" value="0">
+					<span id="duration" class="time">0:00</span>
+				</div>
+			</div>
+			<div class="main__extra-control">
+				<p></p>
+			</div>
+		</div>
+	</div>
+</body>
+
 </html>
